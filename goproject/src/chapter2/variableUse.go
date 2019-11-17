@@ -6,5 +6,6 @@ func main(){
 
     var i int
     i = 10
+    i = 11
     fmt.Println("",i)
 }
