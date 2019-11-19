@@ -17,5 +17,11 @@ func main(){
 	fmt.Printf("\nptr指针变量的值：%v",ptr)
 	fmt.Printf("\nptr指针变量的值引用：%v",*ptr)
 
-	
+	//写一个程序，获取一个int变量num的地址，并打印输出
+	var num int = 666
+	fmt.Printf("\nnum 的内存地址%v",&num)
+	//将num的地址赋给换指针ptr并通过ptr1去修改num的值
+	var ptr1 *int = &num
+	*ptr1 =999
+	fmt.Printf("\nnum 的值为%d",num)
 }
