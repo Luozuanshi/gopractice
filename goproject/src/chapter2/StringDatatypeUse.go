@@ -53,4 +53,12 @@ func main(){
 	"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+"hey,guys"+
 	" boy"
 	fmt.Println(str5)
+
+	//基本数据类型的默认值
+	var a int
+	var b float32
+	var c float64
+	var d bool
+	var e string
+	fmt.Printf("\na =%d,b =%f,c =%f,d =%v,e =%v",a,b,c,d,e)
 } 

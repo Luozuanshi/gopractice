@@ -28,14 +28,14 @@ func main(){
 	fmt.Println("p =",p) 
 
 	var n1 = 20 //n1是什么类型？
-	fmt.Print("\nn1 的数据类型是 %T ", n1)
+	fmt.Printf("\nn1 的数据类型是 %T ", n1)
 	
 	//如何查看某一个变量的数据类型以及数据类型占用大小
 	var n2 = 30 //n1是什么类型？
-	fmt.Print("\nn1 的数据类型是 %T ,%d", n1,unsafe.Sizeof(n2))
+	fmt.Printf("\nn1 的数据类型是 %T ,%d", n1,unsafe.Sizeof(n2))
 
 	//在使用整型变量的时候遵守保小不保大的原则
 	//即：在保证程序正确运行下，尽量使用占用空间小的数据类型
 	var age = 25
-	fmt.Print("\nn1 的数据类型是 %T ,%d", age,unsafe.Sizeof(age))
+	fmt.Printf("\nn1 的数据类型是 %T ,%d", age,unsafe.Sizeof(age))
 }
