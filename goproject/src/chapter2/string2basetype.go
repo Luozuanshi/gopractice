@@ -28,4 +28,17 @@ func main(){
 	f1,_ = strconv.ParseFloat(str3,64)
 	fmt.Printf("\nf1 type %T，f1 =%f",f1,f1)
 
+	//类型转换的时候必须要是有效地值，否则为要转换的对应类型的默认值
+	var str4 string ="hellok"
+	var b1 bool
+	b1,_ = strconv.ParseBool(str4)
+	fmt.Printf("\nb1 type %T,b1 =%v",b1,b1)
+
+	//例如需要将“niahao”string 转换成整型
+	var str5 string = "nihao"
+	var num1 int64
+	num1,_ = strconv.ParseInt(str5,10,64)
+	fmt.Printf("\nnum1 type %T,num1 = %d",num1,num1)
+
+
 }
